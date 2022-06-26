@@ -80,7 +80,7 @@ def lambda_handler(event,context):
     print("TESSERACT\n")
     print("####################\n") 
   # Goes through all images in the folder.
-    for image in glob.glob("/tmp/yolo_output_zip/tmp/*.jpg"):
+    for image in glob.glob("/tmp/yolo_output_zip/*.jpg"):
         try:
             print("toto")
             # Extracts all words in the image and gives their coordinates.            
@@ -100,7 +100,7 @@ def lambda_handler(event,context):
     print("####################\n") 
     
    # Goes through all txt output files and create a pandas dataframe.
-    for text in glob.glob("/tmp/yolo_output_zip/tmp/*.txt"):
+    for text in glob.glob("/tmp/yolo_output_zip/*.txt"):
 
         try:
             print("toto 2")
